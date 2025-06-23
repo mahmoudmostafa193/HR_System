@@ -1,6 +1,8 @@
 ﻿using HRSystem.Data;
+using HRSystem.Migrations;
 using HRSystem.Models;
 using HRSystem.Repositories.IRepositories;
+using Microsoft.EntityFrameworkCore;
 
 namespace HRSystem.Repositories
 {
@@ -20,6 +22,20 @@ namespace HRSystem.Repositories
                 _context.Attendances.Remove(attendance);
                 await _context.SaveChangesAsync();
             }
+        }
+
+        public async Task MarkAllEmployeesAbsent()
+        {
+            var employeesToUpdate = await _context.Employees
+                .Where(e => e.Status == "attend")
+                .ToListAsync();
+
+            foreach (var emp in employeesToUpdate)
+            {
+                emp.Status = "absent";
+            }
+
+            await _context.SaveChangesAsync();
         }
 
         public async Task<Attendance> UpdateAsync(int id, Attendance updatedAttendance)

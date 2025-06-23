@@ -1,7 +1,28 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Nvidia\\source\\repos\\HRSystem\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{43CE561B-8718-4E30-88D1-84F9B8385A01}|HRSystem\\HRSystem.csproj|c:\\users\\nvidia\\source\\repos\\hrsystem\\hrsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43CE561B-8718-4E30-88D1-84F9B8385A01}|HRSystem\\HRSystem.csproj|solutionrelative:hrsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43CE561B-8718-4E30-88D1-84F9B8385A01}|HRSystem\\HRSystem.csproj|c:\\users\\nvidia\\source\\repos\\hrsystem\\hrsystem\\repositories\\attendancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43CE561B-8718-4E30-88D1-84F9B8385A01}|HRSystem\\HRSystem.csproj|solutionrelative:hrsystem\\repositories\\attendancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43CE561B-8718-4E30-88D1-84F9B8385A01}|HRSystem\\HRSystem.csproj|c:\\users\\nvidia\\source\\repos\\hrsystem\\hrsystem\\repositories\\irepositories\\iattendancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43CE561B-8718-4E30-88D1-84F9B8385A01}|HRSystem\\HRSystem.csproj|solutionrelative:hrsystem\\repositories\\irepositories\\iattendancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43CE561B-8718-4E30-88D1-84F9B8385A01}|HRSystem\\HRSystem.csproj|c:\\users\\nvidia\\source\\repos\\hrsystem\\hrsystem\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43CE561B-8718-4E30-88D1-84F9B8385A01}|HRSystem\\HRSystem.csproj|solutionrelative:hrsystem\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43CE561B-8718-4E30-88D1-84F9B8385A01}|HRSystem\\HRSystem.csproj|c:\\users\\nvidia\\source\\repos\\hrsystem\\hrsystem\\controllers\\attendancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43CE561B-8718-4E30-88D1-84F9B8385A01}|HRSystem\\HRSystem.csproj|solutionrelative:hrsystem\\controllers\\attendancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,6 +47,71 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AttendanceController.cs",
+              "DocumentMoniker": "C:\\Users\\Nvidia\\source\\repos\\HRSystem\\HRSystem\\Controllers\\AttendanceController.cs",
+              "RelativeDocumentMoniker": "HRSystem\\Controllers\\AttendanceController.cs",
+              "ToolTip": "C:\\Users\\Nvidia\\source\\repos\\HRSystem\\HRSystem\\Controllers\\AttendanceController.cs",
+              "RelativeToolTip": "HRSystem\\Controllers\\AttendanceController.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAAAHQAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T12:58:50.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\Nvidia\\source\\repos\\HRSystem\\HRSystem\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "HRSystem\\Models\\Employee.cs",
+              "ToolTip": "C:\\Users\\Nvidia\\source\\repos\\HRSystem\\HRSystem\\Models\\Employee.cs",
+              "RelativeToolTip": "HRSystem\\Models\\Employee.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T12:56:56.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IAttendanceRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Nvidia\\source\\repos\\HRSystem\\HRSystem\\Repositories\\IRepositories\\IAttendanceRepository.cs",
+              "RelativeDocumentMoniker": "HRSystem\\Repositories\\IRepositories\\IAttendanceRepository.cs",
+              "ToolTip": "C:\\Users\\Nvidia\\source\\repos\\HRSystem\\HRSystem\\Repositories\\IRepositories\\IAttendanceRepository.cs",
+              "RelativeToolTip": "HRSystem\\Repositories\\IRepositories\\IAttendanceRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T12:48:18.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AttendanceRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Nvidia\\source\\repos\\HRSystem\\HRSystem\\Repositories\\AttendanceRepository.cs",
+              "RelativeDocumentMoniker": "HRSystem\\Repositories\\AttendanceRepository.cs",
+              "ToolTip": "C:\\Users\\Nvidia\\source\\repos\\HRSystem\\HRSystem\\Repositories\\AttendanceRepository.cs",
+              "RelativeToolTip": "HRSystem\\Repositories\\AttendanceRepository.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAmwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T12:48:15.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Nvidia\\source\\repos\\HRSystem\\HRSystem\\Program.cs",
+              "RelativeDocumentMoniker": "HRSystem\\Program.cs",
+              "ToolTip": "C:\\Users\\Nvidia\\source\\repos\\HRSystem\\HRSystem\\Program.cs",
+              "RelativeToolTip": "HRSystem\\Program.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAAABMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T12:40:07.095Z",
+              "EditorCaption": ""
             }
           ]
         }

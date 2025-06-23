@@ -1,4 +1,5 @@
-﻿using HRSystem.Data;
+﻿using Hangfire;
+using HRSystem.Data;
 using HRSystem.Repositories;
 using HRSystem.Repositories.IRepositories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -16,10 +17,10 @@ namespace HRSystem
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // 1. Add services to the container
+            
             builder.Services.AddControllers();
 
-            // 2. Swagger + JWT support
+        
             builder.Services.AddSwaggerGen(options =>
             {
                 options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
@@ -91,6 +92,9 @@ namespace HRSystem
             builder.Services.AddScoped<IApprovalsRepository, ApprovalsRepository>();
 
             builder.Services.AddAutoMapper(typeof(MappingConfig));
+            builder.Services.AddHangfire(x =>
+            x.UseSqlServerStorage(builder.Configuration.GetConnectionString("DefaultConnection")));
+            builder.Services.AddHangfireServer();
 
             var app = builder.Build();
 
@@ -103,9 +107,14 @@ namespace HRSystem
 
             app.UseHttpsRedirection();
 
-            app.UseAuthentication(); // 👈 لازم قبل UseAuthorization
+            app.UseAuthentication(); 
             app.UseAuthorization();
-
+            app.UseHangfireDashboard();
+            RecurringJob.AddOrUpdate<IAttendanceRepository>(
+            "MarkAbsenceDaily",
+            repo => repo.MarkAllEmployeesAbsent(),
+            Cron.Daily(21)
+            );
             app.MapControllers();
 
             app.Run();

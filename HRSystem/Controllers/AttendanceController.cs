@@ -121,6 +121,7 @@ namespace HRSystem.Controllers
                     ErrorMessages = new List<string> { "Employee ID is required" }
                 });
             }
+
             if(createAttendanceDTO==null)
             {
                 return BadRequest(new APIResponse
@@ -131,6 +132,7 @@ namespace HRSystem.Controllers
                 });
             }
             var employee = await _employeeRepository.GetByIdAsync(EmpId);
+
             if (employee == null)
             {
                 return NotFound(new APIResponse
@@ -140,6 +142,7 @@ namespace HRSystem.Controllers
                     ErrorMessages = new List<string> { "Employee not found" }
                 });
             }
+            employee.Status = "attend";
             var model = _mapper.Map<Attendance>(createAttendanceDTO);
             model.EmployeeId = EmpId;
             model.CreatedAt = DateTime.Now;

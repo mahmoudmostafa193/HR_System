@@ -6,6 +6,6 @@ namespace HRSystem.Repositories.IRepositories
     {
         Task DeleteAsync(int id);
         Task<Attendance> UpdateAsync(int id, Attendance attendance);
-
+        Task MarkAllEmployeesAbsent();
     }
 }
