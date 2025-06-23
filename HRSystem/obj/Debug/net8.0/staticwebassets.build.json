@@ -1,0 +1,20 @@
+{
+  "Version": 1,
+  "Hash": "6lwk12iOdd/aKBDAtvlpbfkhYCuXI1p4cCZzBvwAjYg=",
+  "Source": "HRSystem",
+  "BasePath": "_content/HRSystem",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "HRSystem\\wwwroot",
+      "Source": "HRSystem",
+      "ContentRoot": "C:\\Users\\Nvidia\\source\\repos\\HRSystem\\HRSystem\\wwwroot\\",
+      "BasePath": "_content/HRSystem",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [],
+  "Endpoints": []
+}
